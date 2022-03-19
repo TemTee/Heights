@@ -8,3 +8,7 @@ options(digits = 3)
 
 # Data Exploration ----------------------------------------------------------------
 str(heights)
+head(heights)
+summary(heights)
+table(is.na(heights))
+table(heights$sex)
