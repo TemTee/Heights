@@ -22,3 +22,7 @@ heights %>% filter(sex == "Male") %>%
   summarise(avg = mean(height),
             stnd_dv = sd(height),
             quadrant = quantile(height, c(0,0.5,1)))
+
+heights %>% group_by(sex) %>%
+  summarize(average = mean(height), 
+            standard_deviation = sd(height))
